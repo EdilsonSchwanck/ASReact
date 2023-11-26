@@ -31,34 +31,34 @@ nav a:hover {
 
 /* Estilos para a metade esquerda (.half) */
 .half {
-    width: 50%; /* 50% da largura do container principal (.fundo) */
+    width: 50%; 
 }
 
-/* Estilos para o conteúdo dentro de .half */
+
 .half-content {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro de .half */
-    align-items: center; /* Centraliza verticalmente o conteúdo dentro de .half */
-    padding: 0 20px; /* Adiciona algum espaçamento ao redor do conteúdo */
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 20px; 
 }
 
-/* Estilos para o título */
+
 .half-content p {
-    text-align: center; /* Centraliza o texto dentro do .half-content */
+    text-align: center; 
 }
 
-/* Estilos para a navegação na metade direita */
+
 .navegador {
     display: flex;
-    justify-content: flex-end; /* Coloca os elementos no final do container (.half) */
+    justify-content: flex-end; 
 }
 
-/* Adicionei um espaçamento entre os links para melhor legibilidade */
+
 .navegador a {
     margin-left: 20px;
 }
 
-/* Estilos adicionais para os links, você pode ajustar as cores conforme necessário */
+
 .navegador a {
     color: #fff;
     font-weight: bold;

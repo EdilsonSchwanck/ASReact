@@ -11,7 +11,23 @@ function Formes() {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        // Construir o objeto com os dados do produto
+
+        if (nome.length < 5) {
+            alert('O nome deve ter pelo menos 5 caracteres.');
+            return;
+        }
+
+        if (parseFloat(preco) <= 0) {
+            alert('O preço deve ser maior que zero.');
+            return;
+        }
+
+        if (descricao.trim() === '') {
+            alert('A descrição não pode ser vazia.');
+            return;
+        }
+
+    
         const novoProduto = {
             name : nome ,
             price : preco,
@@ -19,7 +35,7 @@ function Formes() {
             photo_url : fotoUrl,
         };
 
-            // Enviar a requisição POST para o servidor
+            
             const response = await fetch("http://localhost:3001/products", {
                 method: 'POST',
                 headers: {
@@ -30,16 +46,13 @@ function Formes() {
 
   
             if (response) {
-            
-            
-          
                 setNome('');
                 setPreco('');
                 setDescricao('');
                 setFotoUrl('');
+                alert('Produto cadastrado com sucesso!');
             } else {
-        
-                console.error('Erro ao cadastrar o produto');
+                alert('Erro ao cadastrar o produto');
             }
       
     };
