@@ -1,0 +1,67 @@
+/* Header.css */
+
+/* Reset de margin e padding para o componente Header */
+body, h1, h2, h3, p, div, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para os links de navegação */
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor ao passar o mouse */
+}
+
+nav a:hover {
+    color: lightblue; /* Cor ao passar o mouse */
+}
+
+/* Estilos para o container principal (.fundo) */
+.fundo {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos no início e no final do container */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    color: white;
+    height: 10vh;
+}
+
+/* Estilos para a metade esquerda (.half) */
+.half {
+    width: 50%; /* 50% da largura do container principal (.fundo) */
+}
+
+/* Estilos para o conteúdo dentro de .half */
+.half-content {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro de .half */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro de .half */
+    padding: 0 20px; /* Adiciona algum espaçamento ao redor do conteúdo */
+}
+
+/* Estilos para o título */
+.half-content p {
+    text-align: center; /* Centraliza o texto dentro do .half-content */
+}
+
+/* Estilos para a navegação na metade direita */
+.navegador {
+    display: flex;
+    justify-content: flex-end; /* Coloca os elementos no final do container (.half) */
+}
+
+/* Adicionei um espaçamento entre os links para melhor legibilidade */
+.navegador a {
+    margin-left: 20px;
+}
+
+/* Estilos adicionais para os links, você pode ajustar as cores conforme necessário */
+.navegador a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+

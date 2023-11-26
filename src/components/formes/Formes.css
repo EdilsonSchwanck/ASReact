@@ -1,0 +1,55 @@
+/* Formes.css */
+
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para melhorar o alinhamento e a aparência */
+.form-row label,
+.form-row input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center; /* Adicionado para centralizar o texto do botão */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Alinhamento à esquerda */
+label,
+input[type="text"] {
+    text-align: left;
+}
