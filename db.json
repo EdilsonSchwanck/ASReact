@@ -153,6 +153,13 @@
       "description": "o mais pica do react",
       "photo_url": "https://m.media-amazon.com/images/I/6109CjoWCKL._AC_UF894,1000_QL80_.jpg",
       "id": 22
+    },
+    {
+      "name": "afsf",
+      "price": "564564",
+      "description": "hfghfghfg",
+      "photo_url": "",
+      "id": 23
     }
   ]
 }
